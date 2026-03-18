@@ -10,9 +10,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 $uri = strtok($_SERVER['REQUEST_URI'], '?');
 
-if ($uri === '/api/users') {
-    require __DIR__ . '/../api.php';
-} else {
+match ($uri) {
+    '/api/users'        => require __DIR__ . '/../api.php',
+    '/docs'             => serveView(__DIR__ . '/../views/docs.html'),
+    default             => notFound(),
+};
+
+function serveView(string $file): void
+{
+    if (!file_exists($file)) {
+        http_response_code(404);
+        echo 'Documentation page not found';
+        return;
+    }
+    header('Content-Type: text/html');
+    echo file_get_contents($file);
+}
+
+function notFound(): void
+{
     http_response_code(404);
     echo json_encode(['error' => 'Not found']);
 }
