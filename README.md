@@ -45,45 +45,45 @@ APIPHP/
 ├── 📄 README.md
 ├── 📄 openapi.json
 │
-├── 📂 backend/                    # 🔙 API REST em PHP
+├── 📂 backend/                    
 │   ├── 📂 data/
-│   │   └── 📄 data.json           # 🗄️ Banco de dados
+│   │   └── 📄 data.json           
 │   │
 │   └── 📂 src/
 │       ├── 📂 config/
-│       │   └── 📄 config.php       # ⚙️ Configurações globais
+│       │   └── 📄 config.php       
 │       │
 │       ├── 📂 public/
-│       │   └── 📄 index.php        # 🌐 Ponto de entrada
+│       │   └── 📄 index.php       
 │       │
-│       ├── 📄 api.php              # 🛣️ Roteador de requisições
-│       ├── 📄 controllers.php       # 🎮 Controladores
-│       ├── 📄 services.php          # 💼 Lógica de negócio
-│       ├── 📄 data.php             # 📊 Camada de dados
-│       └── 📄 validation.php        # ✓ Validações
+│       ├── 📄 api.php             
+│       ├── 📄 controllers.php       
+│       ├── 📄 services.php         
+│       ├── 📄 data.php            
+│       └── 📄 validation.php       
 │
-└── 📂 crud-frontend/             # 🎨 Interface do usuário
+└── 📂 crud-frontend/             
     ├── 📂 src/
-    │   ├── 📄 app.js              # 🚀 App principal
-    │   ├── 📄 index.html          # 📑 Página HTML
+    │   ├── 📄 app.js              
+    │   ├── 📄 index.html          
     │   │
     │   ├── 📂 scripts/
     │   │   ├── 📂 api/
-    │   │   │   ├── 📄 create.js   # ➕ POST
-    │   │   │   ├── 📄 read.js     # 📖 GET
-    │   │   │   ├── 📄 update.js   # ✏️ PUT/PATCH
-    │   │   │   └── 📄 delete.js   # 🗑️ DELETE
+    │   │   │   ├── 📄 create.js   
+    │   │   │   ├── 📄 read.js    
+    │   │   │   ├── 📄 update.js  
+    │   │   │   └── 📄 delete.js   
     │   │   │
     │   │   └── 📂 dom/
-    │   │       └── 📄 render.js   # 🎨 Renderização UI
+    │   │       └── 📄 render.js   
     │   │
     │   └── 📂 styles/
-    │       ├── 📄 reset.css       # 🎯 Reset global
-    │       └── 📄 style.css        # 🌈 Estilos principais
+    │       ├── 📄 reset.css      
+    │       └── 📄 style.css        
     │
-    ├── 📄 Dockerfile              # 🐳 Imagem Docker
-    ├── 📄 compose.yaml            # 🐳 Docker Compose
-    └── 📄 README.md               # 📚 Doc do frontend
+    ├── 📄 Dockerfile        
+    ├── 📄 compose.yaml           
+    └── 📄 README.md             
 ```
 
 ---
@@ -277,16 +277,6 @@ Requisição HTTP
 
 ---
 
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Siga estes passos:
-
-1. **Faça um Fork** do projeto
-2. **Crie uma branch** para sua feature (`git checkout -b feature/MinhaFeature`)
-3. **Commit** suas mudanças (`git commit -m 'Adiciona MinhaFeature'`)
-4. **Push** para a branch (`git push origin feature/MinhaFeature`)
-5. **Abra um Pull Request**
-
 ---
 
 ## 📋 Checklist de Funcionalidades
@@ -298,9 +288,6 @@ Contribuições são bem-vindas! Siga estes passos:
 - [x] CORS configurado
 - [x] Docker Compose
 - [x] Interface responsiva
-- [ ] Sistema de autenticação
-- [ ] Testes unitários
-- [ ] Documentação Swagger/OpenAPI
 
 ---
 
@@ -322,25 +309,9 @@ docker compose down -v
 docker compose up --build
 ```
 
----
-
-## 📄 Licença
-
-Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-## 👨‍💻 Autor
-
-Desenvolvido com ❤️ por **Arthur Silva**
-
-- 🔗 GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- 💼 LinkedIn: [seu-perfil](https://linkedin.com/in/seu-perfil)
-- 📧 Email: seu.email@example.com
-
----
-
-## 🙏 Agradecimentos
 
 Obrigado por usar este projeto! Se você achar útil, deixe uma ⭐ no GitHub.
 
