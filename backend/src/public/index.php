@@ -11,18 +11,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 $uri = strtok($_SERVER['REQUEST_URI'], '?');
 
 match ($uri) {
-    '/api/users'        => require __DIR__ . '/../api.php',
-    '/docs'             => serveView(__DIR__ . '/../views/docs.html'),
-    default             => notFound(),
+    '/api/users'   => require __DIR__ . '/../api.php',
+    '/docs'        => serveView(__DIR__ . '/../views/docs.html'),
+    '/openapi.json' => serveJson(__DIR__ . '/../../../openapi.json'),
+    default        => notFound(),
 };
+
+function serveJson(string $file): void
+{
+    header('Content-Type: application/json');
+    echo file_get_contents($file);
+}
 
 function serveView(string $file): void
 {
-    if (!file_exists($file)) {
-        http_response_code(404);
-        echo 'Documentation page not found';
-        return;
-    }
     header('Content-Type: text/html');
     echo file_get_contents($file);
 }
