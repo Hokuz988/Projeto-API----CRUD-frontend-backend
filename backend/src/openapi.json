@@ -6,9 +6,8 @@
         "description": "API RESTful para gerenciamento de usuários. Desenvolvida em PHP puro sem frameworks. Implementa operações CRUD completas com validação de dados.",
         "contact": {
             "name": "Suporte APIPHP",
-            "url": "https://github.com/seu-usuario/APIPHP",
-            "email": "suporte@apiphp.local"
-        },
+            "url": "https://github.com/Hokuz988"
+                },
         "license": {
             "name": "MIT",
             "url": "https://opensource.org/licenses/MIT"
@@ -26,7 +25,7 @@
     ],
     "externalDocs": {
         "description": "Repositório do Projeto",
-        "url": "https://github.com/seu-usuario/APIPHP"
+        "url": "https://github.com/Hokuz988/Projeto-API----CRUD-frontend-backend"
     },
     "tags": [
         {
