@@ -13,7 +13,7 @@ $uri = strtok($_SERVER['REQUEST_URI'], '?');
 match ($uri) {
     '/api/users'   => require __DIR__ . '/../api.php',
     '/docs'        => serveView(__DIR__ . '/../views/docs.html'),
-    '/openapi.json' => serveJson(__DIR__ . '/../../../openapi.json'),
+    '/openapi.json' => serveJson(__DIR__ . '/../openapi.json'),
     default        => notFound(),
 };
 
